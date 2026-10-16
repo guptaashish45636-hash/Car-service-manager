@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  --ink: #152238;
+  --muted: #667085;
+  --canvas: #f6f8fb;
+  --line: #e5eaf1;
+  --blue: #2764e7;
+  --blue-soft: #eaf1ff;
+  --teal: #0c8f8a;
+  --orange: #f59d2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  background: var(--canvas);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Space Grotesk", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.navbar-brand {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.navbar-brand i {
+  color: var(--blue);
+}
+.nav-link {
+  color: #526075;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--blue);
+}
+.hero {
+  background: linear-gradient(135deg, #eaf1ff 0%, #f7fbff 52%, #e8f7f6 100%);
+  padding: 5rem 0 4rem;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+.eyebrow {
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.section-heading {
+  letter-spacing: -0.035em;
+}
+.page-header {
+  background: linear-gradient(100deg, #152238, #263a58);
+  color: #fff;
+  padding: 2.5rem 0;
+}
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a {
+  color: #cbd5e1;
+}
+.page-header .breadcrumb-item.active {
+  color: #fff;
+}
+.card {
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(21, 34, 56, 0.04);
+}
+.card-hover {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(21, 34, 56, 0.1);
+}
+.icon-box {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 1.15rem;
+}
+.icon-box.teal {
+  background: #e5f7f5;
+  color: var(--teal);
+}
+.icon-box.orange {
+  background: #fff4df;
+  color: #bd6b00;
+}
+.icon-box.red {
+  background: #ffebec;
+  color: #c53d4a;
+}
+.metric-value {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.car-image {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  background: #edf2f7;
+}
+.detail-image {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+}
+.table thead th {
+  background: #f8fafc;
+  color: #667085;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.table td {
+  vertical-align: middle;
+}
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.form-control,
+.form-select {
+  border-color: #d8dee8;
+  padding: 0.72rem 0.85rem;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 0.2rem rgba(39, 100, 231, 0.12);
+}
+.empty-state {
+  border: 1px dashed #cbd5e1;
+  color: var(--muted);
+}
+footer {
+  background: #152238;
+  color: #cbd5e1;
+}
+footer a {
+  color: #cbd5e1;
+}
+footer a:hover {
+  color: #fff;
+}
+.auth-shell {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  place-items: center;
+  padding: 3rem 0;
+}
+.auth-card {
+  max-width: 480px;
+  width: 100%;
+}
+.checklist-item {
+  border-left: 4px solid var(--teal);
+}
+.reminder-card {
+  border-left: 4px solid currentColor;
+}
+.hero-art {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  box-shadow: 0 20px 50px rgba(21, 34, 56, 0.12);
+}
+.hero-art img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding: 0.75rem 0;
+  }
+  .hero {
+    padding-top: 3.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  .hero-art img {
+    height: 230px;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+}
